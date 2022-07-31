@@ -1,0 +1,25 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  input:nth-child(1) {
+    height: 50px;
+    width: 95%;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+  }
+  input:nth-child(2) {
+    margin-left: auto;
+    padding: 1em 0;
+    padding-right: 1.5em;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    color: #0097ee;
+    background-color: white;
+  }
+}

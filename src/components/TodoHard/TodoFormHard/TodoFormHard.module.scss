@@ -1,0 +1,26 @@
+.formContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  width: 300px;
+  margin: auto;
+  margin-right: 1em;
+  background-color: white;
+  
+}
+input {
+  width: 90%;
+  height: 100%;
+  padding-left: 1em;
+  box-sizing: border-box;
+  background-color: #F4F4F4;
+  outline: none;
+  border: none;
+  font-size: 18px;
+}
+.addCross {
+  display: flex;
+  color: #451869;
+  margin: auto;
+}

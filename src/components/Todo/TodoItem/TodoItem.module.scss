@@ -1,0 +1,16 @@
+.taskNotDone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  color: gray;
+   p{
+    color:black;
+    padding-left:0.4em;
+   }
+}
+.crossDelete{
+  margin-left: auto;
+  padding-right: 1.5em;
+  color: orange;
+}

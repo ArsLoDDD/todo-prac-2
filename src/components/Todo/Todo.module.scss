@@ -1,0 +1,30 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 800px;
+  background-color: white;
+}
+.firstHeading{
+    padding-left: 0.85em;
+}
+.secondHeading{
+    padding-left: 2.4em;
+}
+.tasksList,
+.inputBox {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.21);
+}
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em auto;
+}
+.tasksList {
+  display: flex;
+  flex-direction: column;
+}

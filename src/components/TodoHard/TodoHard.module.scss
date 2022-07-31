@@ -1,0 +1,70 @@
+body {
+  background: rgb(68, 90, 165);
+  background: linear-gradient(
+    90deg,
+    rgba(68, 90, 165, 1) 0%,
+    rgba(73, 31, 117, 1) 100%
+  );
+}
+.container {
+  margin-top: 25vh;
+}
+.arseniyHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10vh;
+  color:white;
+  text-shadow: 4px -1px 20px rgba(255, 255, 255, 0.87);
+}
+
+.tasksList,
+.inputBox {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.21);
+}
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em auto;
+}
+.tasksList {
+  display: flex;
+  flex-direction: column;
+}
+.formContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.addCross {
+  color: #451869;
+}
+.selecTasks {
+  margin-right: auto;
+}
+.selectStyle {
+  height: 40px;
+  width: 200px;
+  outline: none;
+  border: none;
+  appearance: none;
+  background-color: white;
+  background-image: url("./down-arrow-multimedia-option-svgrepo-com.svg"),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0) 80%,
+      rgba(74, 21, 111, 1) 80%,
+      rgba(74, 21, 111, 1) 100%
+    );
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.9em top 50%, 0 0;
+  background-size: 0.85em auto, 100%;
+}
+.selectStyle {
+  padding-left: 1em;
+  font-size: 15px;
+}

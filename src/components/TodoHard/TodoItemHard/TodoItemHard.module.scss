@@ -1,0 +1,52 @@
+.taskNotDone,
+.taskIsDone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 250px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  list-style: none;
+  background-color: white;
+  p {
+    color: black;
+    margin-right: auto;
+    padding-left: 1em;
+  }
+}
+.taskIsDone {
+background-color: #B5B2D1;
+
+  p {
+    color: #343349;
+    margin-right: auto;
+    padding-left: 1em;
+    text-decoration: line-through;
+  }
+}
+.doneCheck,
+.crossDelete,
+.doneCheckIsDone,
+.crossDeleteIsDone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  width: 15%;
+  background-color: #4464ad;
+  color: white;
+}
+.crossDelete {
+  background-color: #4e1774;
+}
+.doneCheckIsDone{
+  color: #B5B2D1;
+  background-color: #4464AD;
+
+}
+.crossDeleteIsDone {
+  color: #B5B2D1;
+  background-color: #4B3187;
+}
