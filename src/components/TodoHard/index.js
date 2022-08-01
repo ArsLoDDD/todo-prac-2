@@ -6,7 +6,7 @@ import styles from "./TodoHard.module.scss";
 
 
 const Todo = () => {
-  const { tasks, addTask, setDoneTask, deleteTask } = useTodo([
+  const { tasks, addTask, setDoneTask, deleteTask, selectTask } = useTodo([
     {
       id: Date.now(),
       body: "Wash the car",
@@ -29,7 +29,7 @@ const Todo = () => {
       <div className={styles.formContainer}>
         <TodoFormHard addTask={addTask} />
         <div className={styles.selecTasks}>
-            <select  name="typeOfTasts" className={styles.selectStyle}>
+            <select onChange={({target:{value}})=>{selectTask(value)}} name="typeOfTasts" className={styles.selectStyle}>
               <option value="All">All</option>
               <option value="Done">Done</option>
               <option value="NotDone">Not Done</option>

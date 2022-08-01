@@ -38,12 +38,3 @@ const TodoItemHard = (props) => {
 };
 
 export default TodoItemHard;
-
-// {task.isDone ? (
-//   <CheckCircleIcon />
-// ) : (
-//   <RadioButtonUncheckedIcon
-//     onClick={() => {
-//       setDoneTask(task.id);
-//     }}
-//   />  )}

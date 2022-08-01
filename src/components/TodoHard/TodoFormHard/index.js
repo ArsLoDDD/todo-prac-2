@@ -7,17 +7,11 @@ const TodoFormHard = (props) => {
   const form = document.getElementById("form-id");
   const { addTask } = props;
   return (
-    <Formik
-      initialValues={{ body: "" }}
-      onSubmit={addTask}
-    >
+    <Formik initialValues={{ body: "" }} onSubmit={addTask}>
       <Form className={styles.formContainer} id="form-id">
         <Field name="body" />
         <div className={styles.addCross}>
-          <AddBoxSharpIcon
-          onClick={form.submit()}
-            fontSiza="small"
-          />
+          <AddBoxSharpIcon />
         </div>
       </Form>
     </Formik>

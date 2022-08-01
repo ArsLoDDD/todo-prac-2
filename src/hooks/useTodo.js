@@ -31,6 +31,18 @@ const useTodo = (initialValue) => {
     deleteTask: (id) => {
       setTasks(tasks.filter((task) => task.id !== id));
     },
+    selectTask: (valueSelect) => {
+      if(valueSelect === 'All'){
+        setTasks(tasks.filter((task) => task));
+      }
+      if(valueSelect === 'Done'){
+        setTasks(tasks.filter((task) => task.isDone === true));
+      }
+      if(valueSelect === 'NotDone'){
+        setTasks(tasks.filter((task) => task.isDone === false));
+      }
+      return tasks;
+    },
   };
 };
 
