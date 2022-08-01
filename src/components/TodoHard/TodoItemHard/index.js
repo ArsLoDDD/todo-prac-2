@@ -3,10 +3,10 @@ import styles from "./TodoItemHard.module.scss";
 import DeleteSharpIcon from "@mui/icons-material/DeleteSharp";
 import CheckIcon from "@mui/icons-material/Check";
 const TodoItemHard = (props) => {
-  const { tasks, deleteTask, setDoneTask } = props;
+  const { tasks, deleteTask, setDoneTask, filterTasks } = props;
   return (
     <>
-      {tasks.map((task) => (
+      {filterTasks.map((task) => (
         <li
           className={task.isDone ? styles.taskIsDone : styles.taskNotDone}
           key={task.id}
@@ -20,16 +20,14 @@ const TodoItemHard = (props) => {
           >
             <CheckIcon />
           </div>
-          <div
+          <div onClick={() => {
+                deleteTask(task.id);
+              }}
             className={
               task.isDone ? styles.crossDeleteIsDone : styles.crossDelete
             }
           >
-            <DeleteSharpIcon
-              onClick={() => {
-                deleteTask(task.id);
-              }}
-            />
+            <DeleteSharpIcon />
           </div>
         </li>
       ))}

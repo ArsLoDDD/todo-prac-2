@@ -7,20 +7,21 @@
   margin: auto;
   margin-right: 1em;
   background-color: white;
-  
 }
 input {
   width: 90%;
   height: 100%;
   padding-left: 1em;
   box-sizing: border-box;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   outline: none;
   border: none;
   font-size: 18px;
 }
 .addCross {
   display: flex;
-  color: #451869;
   margin: auto;
+  color: #451869;
+  border: none;
+  background-color:white;
 }

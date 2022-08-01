@@ -2,9 +2,9 @@ import { useState } from "react";
 
 const useTodo = (initialValue) => {
   const [tasks, setTasks] = useState(initialValue);
-
+  const [filterTasks, setFilterTasks] = useState([]);
   return {
-    tasks,
+    tasks,filterTasks,
     addTask: (value) => {
       if (value.body !== "") {
         const newTask = {
@@ -20,26 +20,28 @@ const useTodo = (initialValue) => {
         tasks.map((task) => {
           if (task.id === id) {
             task.isDone = true;
-            console.log(tasks);
+            setFilterTasks(tasks)
             return task;
           } else {
             return task;
           }
+          
         })
       );
     },
     deleteTask: (id) => {
       setTasks(tasks.filter((task) => task.id !== id));
+      setFilterTasks(tasks)
     },
     selectTask: (valueSelect) => {
       if(valueSelect === 'All'){
-        setTasks(tasks.filter((task) => task));
+        setFilterTasks(tasks)
       }
       if(valueSelect === 'Done'){
-        setTasks(tasks.filter((task) => task.isDone === true));
+        setFilterTasks(tasks.filter((task) => task.isDone === true));
       }
       if(valueSelect === 'NotDone'){
-        setTasks(tasks.filter((task) => task.isDone === false));
+        setFilterTasks(tasks.filter((task) => task.isDone === false));
       }
       return tasks;
     },
